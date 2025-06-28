@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💖 Fan Art</title>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden-collage {
+      display: none;
+      margin-top: 20px;
+    }
+    .reveal-btn {
+      padding: 12px 24px;
+      font-size: 1rem;
+      background: #ff6666;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .reveal-btn:hover {
+      background: #ff9999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>im no artist fr 🎨</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">home</a>
+    <a href="memes.html">relate</a>
+    <a href="reasons.html">reasons i like u</a>
+    <a href="fanart.html">fan art</a>
+    <a href="letter.html">endearment</a>
+  </nav>
+
+  <section>
+    <h2>🖌️ you are my muse!! 🖌️</h2>
+    <p>click the button to reveal awesome stuff ✧</p>
+    <button class="reveal-btn" onclick="document.querySelector('.hidden-collage').style.display = 'flex'">Reveal the Art 🔓</button>
+
+    <div class="photo-collage hidden-collage">
+  <div>
+    <img src="fanart1.jpg" alt="Fan art 1">
+    <p><em>"You but in an ugly sketch of mine as an anesthesiologist"</em></p>
+  </div>
+  <div>
+    <img src="fanart3.jpg" alt="Fan art 2">
+    <p><em>"You in USA also as an anesthesiologist but it’s your day off"</em></p>
+  </div>
+  <div>
+    <img src="fanart2.jpg" alt="Fan art 3">
+    <p><em>"You as an awesome pixel character which took me hours to do because I copied someone else's work by tracing and also an anesthesiologist"</em></p>
+  </div>
+</div>
+  </section>
+
+  <footer>
+    may we meet soon pls pls pls 💫 — Zandrx 🎨
+  </footer>
+
+  <script src="effects.js"></script>
+</body>
+</html>

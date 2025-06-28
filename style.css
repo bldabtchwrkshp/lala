@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #4b1c1c, #8e3a3a, #b85c5c);
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+header {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #4b1c1c, #8e3a3a);
+  text-shadow: 2px 2px black;
+}
+
+header h1,
+h1, h2, h3 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: #ffdede;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
+
+nav a {
+  color: #ff6666;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  color: #ffb3b3;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+section p,
+section ul,
+section li {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.photo-collage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo-collage img {
+  width: 200px;
+  height: auto;
+  border: 5px solid white;
+  box-shadow: 0 0 15px black;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.photo-collage img:hover {
+  transform: rotate(-3deg) scale(1.03);
+}
+
+.floating-heart {
+  position: fixed;
+  font-size: 2rem;
+  animation: floatUp 4s ease-in;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% { bottom: 10px; opacity: 1; transform: translateX(0); }
+  100% { bottom: 120vh; opacity: 0; transform: translateX(-20px) rotate(360deg); }
+}
+  100% { bottom: 100vh; opacity: 0; transform: rotate(360deg); }
+}
+
+.sparkle {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, white, pink);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkleFade 0.5s forwards;
+  z-index: 9999;
+}
+
+@keyframes sparkleFade {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(3); }
+}
+
+footer {
+  background: #330000;
+  color: #ffcccc;
+  padding: 30px 10px;
+  font-size: 0.9rem;
+}
